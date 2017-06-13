@@ -1,5 +1,6 @@
 <template>
  <div class="home">
+   <!--home 轮播图成功-->
    <div class="banner">
      <div class=" swiper-container">
       <div class=" swiper-wrapper">
@@ -10,7 +11,7 @@
       <!-- 如果需要滚动条 -->
       <div class="swiper-scrollbar"></div>
       </div>
-  </div>
+     </div>
    </div>
 </template>
 
