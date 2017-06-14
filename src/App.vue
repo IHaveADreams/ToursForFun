@@ -59,7 +59,6 @@ export default {
 @import url(../static/swiper-3.4.2.min.css);
 
 .appNav{
-  padding-top: 0.2rem;
   position: fixed;
   bottom: 0;
   left:0;

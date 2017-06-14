@@ -1,17 +1,27 @@
 <template>
- <div class="home">
-   <!--home 轮播图成功-->
-   <div class="banner">
-     <div class=" swiper-container">
-      <div class=" swiper-wrapper">
-        <div class="swiper-slide" v-for="img in bannerImgInfo"><img :src=bannerBaseUrl+img.picture alt="img.name"></div>
-      </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
-      <!-- 如果需要滚动条 -->
-      <div class="swiper-scrollbar"></div>
+  <div class="home">
+    <!--home 轮播图开始-->
+    <div class="banner">
+      <div class=" swiper-container">
+        <div class=" swiper-wrapper">
+          <div class="swiper-slide" v-for="img in bannerImgInfo"><img :src=bannerBaseUrl+img.picture alt="img.name"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
       </div>
      </div>
+     <!--轮播图完成   导航栏开始-->
+
+    <nav>
+      <ul class="serch">
+         <li clsss="serchImg"></li> 
+         <li>搜索关键词、产品ID</li>
+         <li class="telImg"></li>
+      </ul>
+    </nav>
+
    </div>
 </template>
 
@@ -45,5 +55,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../static/home.scss';
-
 </style>
